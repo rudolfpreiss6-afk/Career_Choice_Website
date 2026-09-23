@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="hero">hope<span class="dot">.</span></h1>
+        <p>Find your direction</p>
+    </header>
+
+    <main>
+
+        <section class="intro-section">
+            
+            <div class="guidance-label">
+                <img src="img/checkmark.png" alt="Guidance icon" class="guidance-icon">
+                <p>Science-based career guidance</p>
+            </div>
+
+            <h1>Find the career that <span class="multicolor-text">fits who you are</span></h1>
+            <p>Hope blends the Big Five personality model with the 
+                RIASEC framework to reveal the careers where 
+                you'll genuinely thrive — in 30 thoughtful questions.</p>
+
+        </section>
+
+        <section class="question-card">
+            <p>Question 1 of 30</p>
+
+            <fieldset aria-describedby="question-help">
+                <legend>
+                    I see myself as someone who does a very thorough job.
+                </legend>
+
+                <p id="question-help">
+                    Choose the number that best describes you.
+                    There are no right or wrong answers.
+                </p>
+
+                <div class="rating-options">
+                    
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="0">
+                        <span>0</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="1">
+                        <span>1</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="2">
+                        <span>2</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="3">
+                        <span>3</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="4">
+                        <span>4</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="5">
+                        <span>5</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="6">
+                        <span>6</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="7">
+                        <span>7</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="8">
+                        <span>8</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="9">
+                        <span>9</span>
+                    </label>
+
+                    <label class="rating-option">
+                        <input type="radio" name="answer" value="10">
+                        <span>10</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class = "agree-disagree">
+                <p>0 — Strongly disagree </p>
+                <p>10 — Strongly agree</p>
+            </div>
+            <p class="answer-display">Your answer: <span id="answer-1">will appear here</span></p>
+            <div class="question-navigation">
+                <button type="button" id="previous-button">Previous</button>
+                <button type="button" id="next-button">Next</button>
+            </div>
+        </section>
+
+        <section class="sub-explanations">
+            <div class="The5">
+                <img src="img/big5.png" alt="Big Five model" class="sub-explanation-image">
+                <h2>Big Five model</h2>
+                <p>Measures your core personality across five scientifically validated traits.</p>
+            </div>
+            
+            <div class="RIASEC">
+                <img src="img/riasec.png" alt="RIASEC model" class="sub-explanation-image">
+                <h2>RIASEC</h2>
+                <p>Maps your interests and work preferences to six career-environment types.</p>
+            </div>
+
+            <div class="Top3Matches">   
+                <img src="img/matches.png" alt="Top 3 career matches" class="sub-explanation-image">
+                <h2>Top 3 Matches</h2>
+                <p>Personalized, rank-ordered career recommendations with the field for each.</p>
+            </div>
+
+            <div class="VisualResults">
+                <img src="img/results.png" alt="Visual Results" class="sub-explanation-image">
+                <h2>Visual Results</h2>
+                <p>See both personality profiles rendered as clear, interactive charts.</p>
+            </div>
+        </section>
+
+        <section class="secondary-sub-explanations">
+            <h1>How it works</h1>
+            <div class = "first_step">
+                <h4>1</h4>
+                <div>
+                    <h4>Answer 30 questions</h4>
+                    <p>Rate each statement on a 1–10 scale, from disagree to agree. There are no right answers — only honest ones..</p>
+                </div>
+            </div>
+                
+           
+                
+            <div class="second_step">
+                <h4>2</h4>
+                <div>
+                    <h4>Get your results</h4>
+                    <p>See your Big Five personality profile and RIASEC interest profile, along with your top three career matches.</p>
+                </div>
+                
+            </div>
+
+            
+                 
+            <div class="third_step">
+                <h4>3</h4>
+                <div>
+                    <h4>Get your recommendations</h4>
+                    <p>We rank the careers that best match your full profile and visualize both personality tests so you can see yourself clearly.</p>
+                </div>
+            </div>
+            
+                
+        </section>
+
+        <section id="results" hidden>
+            <h1>Your results</h1>
+            <p>Here is your personality profile.</p>
+            <div id="results-content"></div>
+        </section>
+        
+
+
+    </main>
+
+    <footer>
+        <p>&copy; Hope · A career guidance assessment built on the Big Five & RIASEC models.</p>
+        <a href="mailto:rudolfpreiss6@gmail.com">Contact Us</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
